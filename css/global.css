@@ -9,13 +9,12 @@ html {
     overflow-x: hidden;
 }
 body {
-    overflow-x: hidden;
-    width: 100%;
-}
-body {
     font-family: Arial, sans-serif;
     color: #26354f;
     background-color: #f8f1e9;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 65px;
 }
 
 /* =========================
@@ -33,9 +32,11 @@ nav {
 
     background-color: #fffaf4;
 
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 10;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav h2 {
@@ -103,8 +104,11 @@ footer {
         height: 70px;
         padding: 0 6%;
         flex-direction: row;
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     nav h2 {
