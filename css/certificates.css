@@ -1,0 +1,496 @@
+/* =================================
+   CERTIFICATES PAGE
+================================= */
+
+.certificates-header {
+    padding: 65px 7% 55px;
+    background: #ede8e3;
+}
+
+.certificates-header-inner {
+    max-width: 1080px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 300px;
+
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* =================================
+   HEADER TITLE
+================================= */
+
+.certificates-label {
+    margin-bottom: 15px;
+
+    color: #b06c83;
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.certificates-header h1 {
+    color: #23395d;
+
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 4vw, 60px);
+    font-weight: normal;
+
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.certificates-header h1 span {
+    color: #b06c83;
+    font-style: italic;
+}
+
+
+/* =================================
+   INTRO CARD
+================================= */
+
+.certificate-intro {
+    position: relative;
+
+    min-height: 155px;
+
+    padding: 45px 24px 22px;
+
+    display: flex;
+    align-items: center;
+
+    background: #f8f5f1;
+
+    border: 1px solid rgba(35, 57, 93, 0.10);
+    border-radius: 5px;
+
+    box-shadow: 9px 9px 0 #a9b8a5;
+}
+
+.intro-number {
+    position: absolute;
+
+    top: 16px;
+    right: 18px;
+
+    color: #7c9475;
+
+    font-family: Georgia, serif;
+    font-size: 11px;
+}
+
+.intro-line {
+    position: absolute;
+
+    top: 27px;
+    left: 24px;
+
+    width: 32px;
+    height: 2px;
+
+    background: #23395d;
+}
+
+.certificate-intro p {
+    color: #68748a;
+
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   CERTIFICATES GRID
+================================= */
+
+.certificates-section {
+    padding: 35px 7% 65px;
+
+    background: #ede8e3;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    max-width: 1230px;
+    margin: auto;
+}
+
+
+/* =================================
+   CERTIFICATE CARD
+================================= */
+
+.certificate-card {
+    position: relative;
+
+    min-height: 255px;
+
+    padding: 23px 25px;
+
+    background: #f8f5f1;
+
+    border: 1px solid rgba(35, 57, 93, 0.09);
+    border-radius: 6px;
+
+    box-shadow: 0 8px 22px rgba(35, 57, 93, 0.055);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 14px 28px rgba(35, 57, 93, 0.09);
+}
+
+
+/* =================================
+   TOP
+================================= */
+
+.certificate-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.certificate-number {
+    color: #b06c83;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+.certificate-year {
+    color: #9a8290;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* =================================
+   ICON
+================================= */
+
+.certificate-icon {
+    width: 38px;
+    height: 38px;
+
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eee4e5;
+
+    color: #b06c83;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+
+.certificate-two .certificate-icon {
+    background: #e4e9e2;
+    color: #70866a;
+}
+
+.certificate-three .certificate-icon {
+    background: #e5e2ea;
+    color: #756f86;
+}
+
+.certificate-four .certificate-icon {
+    background: #e5e9ef;
+    color: #23395d;
+}
+
+
+/* =================================
+   PROVIDER
+================================= */
+
+.certificate-provider {
+    margin-bottom: 7px;
+
+    color: #9a8290;
+
+    font-size: 7px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* =================================
+   TITLE
+================================= */
+
+.certificate-card h2 {
+    margin-bottom: 11px;
+
+    color: #23395d;
+
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+
+    line-height: 1.05;
+}
+
+.certificate-card h2 em {
+    color: #b06c83;
+    font-style: italic;
+}
+
+.certificate-two h2 em {
+    color: #70866a;
+}
+
+.certificate-three h2 em {
+    color: #756f86;
+}
+
+.certificate-four h2 em {
+    color: #23395d;
+}
+
+
+/* =================================
+   DATE
+================================= */
+
+.certificate-date {
+    margin-bottom: 13px;
+
+    color: #7b8494;
+
+    font-size: 9px;
+}
+
+
+/* =================================
+   LINK
+================================= */
+
+.certificate-link {
+    display: inline-block;
+
+    padding-bottom: 4px;
+
+    border-bottom: 1px solid #23395d;
+
+    color: #23395d;
+
+    text-decoration: none;
+
+    font-size: 9px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.certificate-link:hover {
+    color: #b06c83;
+    border-color: #b06c83;
+}
+
+
+/* =================================
+   CARD ACCENTS
+================================= */
+
+.certificate-one {
+    border-top: 3px solid #d99aaa;
+}
+
+.certificate-two {
+    border-top: 3px solid #a9b8a5;
+}
+
+.certificate-three {
+    border-top: 3px solid #b8b1c4;
+}
+
+.certificate-four {
+    border-top: 3px solid #8d9caf;
+}
+
+
+/* =================================
+   CLOSING
+================================= */
+
+.certificate-closing {
+    padding: 65px 7%;
+
+    background: #23395d;
+
+    color: white;
+}
+
+.closing-inner {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.closing-inner > span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #d99aaa;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.closing-inner h2 {
+    max-width: 550px;
+
+    margin-bottom: 18px;
+
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+
+    line-height: 1;
+}
+
+.closing-inner h2 em {
+    color: #d99aaa;
+    font-style: italic;
+}
+
+.closing-inner p {
+    max-width: 400px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .certificates-header-inner {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .certificate-intro {
+        max-width: 480px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .certificates-header {
+        padding: 50px 7% 45px;
+    }
+
+    .certificates-header h1 {
+        font-size: 45px;
+    }
+
+    .certificate-intro {
+        min-height: 145px;
+
+        padding: 42px 22px 20px;
+
+        box-shadow: 7px 7px 0 #a9b8a5;
+    }
+
+    .certificate-intro p {
+        font-size: 11px;
+    }
+
+    .certificates-section {
+        padding: 25px 6% 5px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .certificate-card {
+        min-height: 225px;
+
+        padding: 21px 22px;
+    }
+
+    .certificate-top {
+        margin-bottom: 14px;
+    }
+
+    .certificate-icon {
+        width: 34px;
+        height: 34px;
+
+        margin-bottom: 11px;
+
+        font-size: 15px;
+    }
+
+    .certificate-card h2 {
+        font-size: 22px;
+
+        margin-bottom: 9px;
+    }
+
+    .certificate-date {
+        margin-bottom: 11px;
+    }
+
+    .certificate-closing {
+        padding: 50px 7%;
+    }
+
+    .closing-inner h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* =================================
+   REDUCED MOTION
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .certificate-card {
+        transition: none;
+    }
+
+}

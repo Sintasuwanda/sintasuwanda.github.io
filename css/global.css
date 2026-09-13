@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #26354f;
+    background-color: #f8f1e9;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    height: 65px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    background-color: #fffaf4;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #243b63;
+}
+
+nav h2::first-letter {
+    color: #243b63;
+}
+
+nav ul {
+    display: flex;
+    gap: 28px;
+
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #303b4d;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #243b63;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #243b63;
+
+    color: white;
+
+    font-size: 14px;
+}
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #243b63;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        height: 70px;
+        padding: 0 6%;
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+    }
+
+    nav h2 {
+        font-size: 28px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        gap: 0;
+
+        padding: 10px 0;
+
+        background: #fffaf4;
+        border-top: 1px solid rgba(35, 59, 99, 0.08);
+        box-shadow: 0 8px 20px rgba(35, 59, 99, 0.08);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+}

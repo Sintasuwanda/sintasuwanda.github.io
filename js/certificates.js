@@ -1,0 +1,1 @@
+console.log("Certificates page loaded.");

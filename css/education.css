@@ -1,0 +1,430 @@
+/* =================================
+   EDUCATION PAGE
+================================= */
+
+.education-header {
+    padding: 65px 7% 55px;
+    background: #ede8e3;
+}
+
+.education-header-inner {
+    max-width: 1080px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 300px;
+
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.education-label {
+    margin-bottom: 15px;
+
+    color: #b06c83;
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.education-header h1 {
+    color: #23395d;
+
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 5vw, 66px);
+    font-weight: normal;
+
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.education-header h1 span {
+    color: #b06c83;
+    font-style: italic;
+}
+
+
+/* =================================
+   INTRO
+================================= */
+
+.education-intro {
+    position: relative;
+
+    min-height: 155px;
+
+    padding: 45px 24px 22px;
+
+    display: flex;
+    align-items: center;
+
+    background: #f8f5f1;
+
+    border: 1px solid rgba(35, 57, 93, 0.10);
+    border-radius: 5px;
+
+    box-shadow: 9px 9px 0 #a9b8a5;
+}
+
+.intro-number {
+    position: absolute;
+
+    top: 16px;
+    right: 18px;
+
+    color: #7c9475;
+
+    font-family: Georgia, serif;
+    font-size: 11px;
+}
+
+.intro-line {
+    position: absolute;
+
+    top: 27px;
+    left: 24px;
+
+    width: 32px;
+    height: 2px;
+
+    background: #23395d;
+}
+
+.education-intro p {
+    color: #68748a;
+
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   EDUCATION SECTION
+================================= */
+
+.education-section {
+    max-width: 1080px;
+    margin: auto;
+
+    padding: 40px 7% 5px;
+
+    background: #ede8e3;
+}
+
+
+/* =================================
+   EDUCATION CARD
+================================= */
+
+.education-card {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 55px 1fr;
+
+    gap: 25px;
+
+    padding: 28px 30px;
+
+    margin-bottom: 18px;
+
+    background: #f8f5f1;
+
+    border: 1px solid rgba(35, 57, 93, 0.09);
+    border-radius: 6px;
+
+    box-shadow: 0 8px 22px rgba(35, 57, 93, 0.055);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 14px 28px rgba(35, 57, 93, 0.09);
+}
+
+
+/* =================================
+   NUMBER
+================================= */
+
+.education-number {
+    color: #b06c83;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+
+    padding-top: 2px;
+}
+
+.school-card .education-number {
+    color: #70866a;
+}
+
+
+/* =================================
+   CONTENT
+================================= */
+
+.education-content {
+    border-left: 1px solid rgba(35, 57, 93, 0.12);
+
+    padding-left: 25px;
+}
+
+.education-status {
+    margin-bottom: 9px;
+
+    color: #9a8290;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    letter-spacing: 1.8px;
+}
+
+.education-content h2 {
+    margin-bottom: 5px;
+
+    color: #23395d;
+
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+
+    line-height: 1.05;
+}
+
+.education-content h3 {
+    margin-bottom: 13px;
+
+    color: #b06c83;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+
+    font-style: italic;
+}
+
+.school-card .education-content h3 {
+    color: #70866a;
+}
+
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+.education-description {
+    max-width: 650px;
+
+    margin-bottom: 15px;
+
+    color: #68748a;
+
+    font-size: 11px;
+    line-height: 1.75;
+}
+
+
+/* =================================
+   TAGS
+================================= */
+
+.education-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+.education-tags span {
+    padding: 6px 9px;
+
+    border: 1px solid rgba(35, 57, 93, 0.16);
+    border-radius: 50px;
+
+    color: #23395d;
+
+    font-size: 8px;
+    letter-spacing: 0.5px;
+
+    background: rgba(255, 255, 255, 0.35);
+}
+
+
+/* =================================
+   CLOSING
+================================= */
+
+.education-closing {
+    padding: 65px 7%;
+
+    background: #23395d;
+
+    color: white;
+}
+
+.closing-inner {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.closing-inner > span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #d99aaa;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.closing-inner h2 {
+    max-width: 550px;
+
+    margin-bottom: 18px;
+
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+
+    line-height: 1;
+}
+
+.closing-inner h2 em {
+    color: #d99aaa;
+    font-style: italic;
+}
+
+.closing-inner p {
+    max-width: 400px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .education-header-inner {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .education-intro {
+        max-width: 480px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .education-header {
+        padding: 50px 7% 45px;
+    }
+
+    .education-header h1 {
+        font-size: 45px;
+    }
+
+    .education-intro {
+        min-height: 145px;
+
+        padding: 42px 22px 20px;
+
+        box-shadow: 7px 7px 0 #a9b8a5;
+    }
+
+    .education-intro p {
+        font-size: 11px;
+    }
+
+
+    .education-section {
+        padding: 25px 6% 45px;
+    }
+
+    .education-card {
+        grid-template-columns: 35px 1fr;
+
+        gap: 15px;
+
+        padding: 21px 20px;
+
+        margin-bottom: 15px;
+    }
+
+    .education-number {
+        font-size: 16px;
+    }
+
+    .education-content {
+        padding-left: 17px;
+    }
+
+    .education-content h2 {
+        font-size: 23px;
+    }
+
+    .education-content h3 {
+        font-size: 15px;
+    }
+
+    .education-description {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .education-tags span {
+        padding: 5px 8px;
+        font-size: 7px;
+    }
+
+
+    .education-closing {
+        padding: 50px 7%;
+    }
+
+    .closing-inner h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* =================================
+   REDUCED MOTION
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .education-card {
+        transition: none;
+    }
+
+}
